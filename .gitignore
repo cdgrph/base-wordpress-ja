@@ -13,9 +13,12 @@ wp-content/cache/
 wp-content/upgrade/
 wp-content/uploads/
 wp-content/wp-cache-config.php
-wp-content/themes/twentyfifteen/
-wp-content/themes/twentyfounrteen/
+wp-content/themes/twentyfifteen
+wp-content/themes/twentyfourteen
+wp-content/plugins/hello.php
 
+/readme.html
+/license.txt
 
 ###SASS###
 
