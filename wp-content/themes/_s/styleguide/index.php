@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="css/github-markdown.css">
 
   <!-- Replace below stylesheet with your own stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../style.css">
 
   <!-- prism Syntax Highlighting Styles -->
   <link rel="stylesheet" href="vendor/prism/prism.css">
