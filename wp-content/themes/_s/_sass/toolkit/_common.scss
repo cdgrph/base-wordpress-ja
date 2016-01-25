@@ -55,7 +55,7 @@ $default-opacity: .5 !default;
 $disabled-opacity: $default-opacity !default;
 $default-transition: .3s !default;
 
-$bem-element-separator: "-" !default;
+$bem-element-separator: "__" !default;
 $bem-modifier-separator: "--" !default;
 
 //-------------------- Spacing --------------------//
