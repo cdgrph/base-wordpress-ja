@@ -1,16 +1,19 @@
-//-------------------- Responsive Helper --------------------//
+/* Responsive Helper
+--------------------------------------------------------
 
-// Useful for responsive coding
-// Markups below are placed by default
-//
-//	<!-- Dev helper -->
-//	<div class="responsive-helper">
-//		<span class="label show-xsmall">X-small</span>
-//		<span class="label show-small">Small</span>
-//		<span class="label show-medium">Medium</span>
-//		<span class="label show-large">Large</span>
-//		<span class="label show-xlarge">X-large</span>
-//	</div>
+  Useful for responsive coding
+  Markups below are placed by default
+
+  <!-- Dev helper -->
+  <div class="responsive-helper">
+  	<span class="label show-xsmall">X-small</span>
+  	<span class="label show-small">Small</span>
+  	<span class="label show-medium">Medium</span>
+  	<span class="label show-large">Large</span>
+  	<span class="label show-xlarge">X-large</span>
+  </div>
+
+------------------------------------------------------ */
 
 .responsive-helper {
 	position: fixed;
@@ -19,19 +22,9 @@
 	right: 0;
 	z-index: 999;
 	color: #fff;
-	.show-xsmall {
-		background-color: $error;
-	}
-	.show-small {
-		background-color: $success;
-	}
-	.show-medium {
-		background-color: $warning;
-	}
-	.show-large {
-		background-color: $info;
-	}
-	.show-xlarge {
-		background-color: $default;
-	}
+	.show-xsmall { background-color: $error; }
+	.show-small { background-color: $success; }
+	.show-medium { background-color: $warning; }
+	.show-large { background-color: $info; }
+	.show-xlarge { background-color: $default; }
 }
