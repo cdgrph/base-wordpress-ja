@@ -1,0 +1,14 @@
+/* Breadcrumbs
+------------------------------------------------------ */
+
+.breadcrumb {
+	li {
+		&:last-child {
+			a {
+				color: inherit;
+				pointer-events: none;
+				cursor: default;
+			}
+		}
+	}
+}

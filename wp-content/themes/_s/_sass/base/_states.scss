@@ -1,0 +1,15 @@
+/* States
+------------------------------------------------------ */
+
+.is-info {
+	background-color: darken($info, 10%) !important;
+}
+.is-warning {
+	background-color: darken($warning, 10%) !important;
+}
+.is-success {
+	background-color: darken($success, 10%) !important;
+}
+.is-error {
+	background-color: darken($error, 10%) !important;
+}
