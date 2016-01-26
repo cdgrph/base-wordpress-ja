@@ -164,14 +164,14 @@
 
   <!--[if gt IE 8]><!--><script src="vendor/prism/prism.js"></script><!--<![endif]-->
   <script src="js/sg-scripts.js"></script>
-  <!-- Coding helper -->
-  <div class="label" style="position:fixed;top:inherit;bottom:0;right:0;z-index:999;background:red;color:#fff;">
-    <span class="show-xsmall">X-small</span>
-    <span class="show-small">Small</span>
-    <span class="show-medium">Medium</span>
-    <span class="show-large">Large</span>
-    <span class="show-xlarge">X-large</span>
-    <a href="/">Site Root</a>
+  <!-- Dev helper -->
+  <div class="responsive-helper">
+    <a class="label" href="/">Root</a>
+    <span class="label show-xsmall">X-small</span>
+    <span class="label show-small">Small</span>
+    <span class="label show-medium">Medium</span>
+    <span class="label show-large">Large</span>
+    <span class="label show-xlarge">X-large</span>
   </div>
 </body>
 </html>
