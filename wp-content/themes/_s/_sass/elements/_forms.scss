@@ -1,0 +1,80 @@
+/* Buttons
+------------------------------------------------------ */
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+
+  @extend .button;
+
+  &:hover:not([disabled]),
+  &:focus:not([disabled]) {
+    opacity: $hoverd-opacity;
+  }
+}
+
+
+/* Text Inputs
+------------------------------------------------------ */
+
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
+input[type="password"] {
+  @extend .input;
+}
+
+
+/* Text Area
+------------------------------------------------------ */
+
+textarea {
+  @extend .input;
+}
+
+
+/* Other Inputs
+------------------------------------------------------ */
+
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"] {
+  @extend .input;
+}
+
+input[type="number"] {
+  @extend .input;
+}
+
+// input[type="color"] { }
+// input[type="range"] { }
+
+
+/* Select
+------------------------------------------------------ */
+
+select {
+  @extend .input;
+}
+
+select.input:not([multiple]) {
+  padding-right: 2.5rem;
+  background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAMAAABhq6zVAAAARVBMVEUBAQECAgIDAwMHBwcICAgJCQkKCgr///8CAgIDAwMFBQUBAQEBAQEBAQECAgIBAQECAgIDAwMBAQECAgICAgIBAQEAAACTXICYAAAAFnRSTlMAAAAAAAAAABgcIn+DiYuMjpKVnJ6iY5z7aQAAAFlJREFUCB1NwUkChCAQBMGybHDfUPP/Tx2YkxEaPqRxzn1KfZ5HqVvfiJQi3rXTAnekFDcsKsCT8wMU+QSuCzgt++DvsGV7o9psy9UOuyu5KcWN3EyTGw0fP8ddBXGBJs5nAAAAAElFTkSuQmCC) calc(100% - .75rem) 50% no-repeat;
+  }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+    select.input:not([multiple]) {
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAY1BMVEUAAAD///8ODg4PDw8TExMVFRUWFhYXFxcYGBgGBgYHBwcICAgJCQkICAgJCQkCAgICAgICAgIBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEAAAABAQEBAQEBAQEBAQEAAAAAAACpXp1GAAAAIHRSTlMAAAICAgICAgIICAgICgpiZGaRk5WXmZudtbe3ubu9/RcNK2EAAAChSURBVBgZdcEHEoIwAEXBF0EFbPRYwPz7n1IgDAMO2cUEYAIwAYwSNhJmxStlJX0VTHKn94XF5S2XM8idpE/KLP1Icjk8nEbdlcm108g9sPK6jEHWybMcnvL6O9x7ec8DRFZef7v18mzEILbyvl95NmYSt9poY2anVivticWx0aI5snKuNavPbCS1JnXCv0qDih2VVLGrLFkxAZgATAAm4Ae4OhbVit01rQAAAABJRU5ErkJggg==);
+      background-size: 12px 12px; } }
+  select.input:not([multiple]).small {
+    padding-right: 2.25rem;
+    background-position: calc(100% - .5rem) 50%;
+    background-size: 8px 8px; }
+  select.input:not([multiple]).large {
+    padding-right: 2.75rem;
+    background-position: calc(100% - 1rem) 50%; }

@@ -5,3 +5,29 @@
   Or use difined colors in tolkit: toolkit/_common.scss
 
 --------------------------------------------------------- */
+
+
+
+/*  Directories
+--------------------------------------------------------
+
+  Set file directories.
+
+  Usage:
+  $imgpath: "./img";
+
+  header {
+    background: url(#{$imgpath}/header-bg.jpg) no-repeat left bottom;
+  }
+
+--------------------------------------------------------- */
+
+// image directory path
+$imgpath: "./img";
+
+
+
+/*  Hoverd transparency
+--------------------------------------------------------- */
+
+$hoverd-opacity: .75;
