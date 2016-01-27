@@ -1,0 +1,15 @@
+/* Margin Fix
+------------------------------------------------------ */
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 $margin 0; // Fix toolkit default margin
+}
+
+p, ul, ol, dl, pre {
+    margin: 0 0 $margin 0; // Fix toolkit default margin
+}
+
+table, .table {
+	margin-top: 0;
+	margin-bottom: $margin;
+}
