@@ -1,4 +1,4 @@
-/* Container
+/* Wrap
 ------------------------------------------------------ */
 
 $wrap-max-width: 70em; // restricts width
@@ -9,4 +9,8 @@ $wrap-max-width: 70em; // restricts width
   margin-right: auto;
   width: 100%;
   max-width: $wrap-max-width;
+  padding: 0 1em;
+  @include if-small() {
+    padding: 0 1.5em;
+  }
 }
