@@ -1,11 +1,12 @@
 /* Container
 ------------------------------------------------------ */
 
-$container-max-width: 70em; // restricts width
+$wrap-max-width: 70em; // restricts width
 
-.container {
+.wrap {
   @include clear-fix();
   margin-left: auto;
   margin-right: auto;
-  max-width: $container-max-width;
+  width: 100%;
+  max-width: $wrap-max-width;
 }

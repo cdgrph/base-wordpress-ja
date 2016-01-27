@@ -69,7 +69,7 @@ function _s_entry_footer() {
 		sprintf(
 			/* translators: %s: Name of current post */
 			esc_html__( 'Edit %s', '_s' ),
-			the_title( '<span class="screen-reader-text">"', '"</span>', false )
+			the_title( '<span class="sr-only">"', '"</span>', false )
 		),
 		'<span class="edit-link">',
 		'</span>'
