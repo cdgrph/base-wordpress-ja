@@ -39,9 +39,13 @@
 			endif; ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', '_s' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+		<nav class="site-navigation button-group" role="navigation">
+			<button class="site-navigation__button show-xsmall button" data-drop="#menu" aria-controls="menu" aria-haspopup="true"><?php esc_html_e( 'Primary Menu', '_s' ); ?></button>
+			<?php
+			if (has_nav_menu('primary')) :
+       			wp_nav_menu(['theme_location' => 'primary', 'container' => false, 'items_wrap' => '<ul id="menu" class="site-navigation__menu drop drop--down" data-drop-menu>%3$s</ul>']);
+       		endif; ?>
+
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
