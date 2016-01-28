@@ -118,8 +118,8 @@ function _s_scripts() {
 
 	//deregister default jQuery included with Wordpress
 	wp_deregister_script( 'jquery' );
-	$jquery_cdn = '//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js';
-	wp_enqueue_script( 'jquery', $jquery_cdn, array(), '2.2.0', true );
+	$jquery_cdn = '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js';
+	wp_enqueue_script( 'jquery', $jquery_cdn, array(), '2.1.1', true );
 
 	wp_enqueue_script( '_s-script', get_template_directory_uri() . '/js/script.min.js', array(), '', true );
 
